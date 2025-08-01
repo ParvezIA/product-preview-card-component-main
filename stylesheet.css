@@ -1,0 +1,171 @@
+/*default style from frontend mentor*/
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { 
+    color: hsl(0, 0%, 0%); 
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:active {
+    color: black;
+}
+
+:root {
+
+--Black: hsl(212, 21%, 14%);
+--Grey: hsl(228, 12%, 48%);
+--Cream: hsl(30, 38%, 92%);
+--White: hsl(0, 0%, 100%);
+
+
+--Green-500: hsl(158, 36%, 37%);
+--Green-700: hsl(158, 42%, 18%);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--Cream);
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Mobile first approch*/
+
+.main {
+    width: 95%;
+    margin: 3em auto;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+
+picture {
+    width: 100%;
+}
+
+picture img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+#text-section {
+    padding: 1em;
+}
+
+#text-section h6 {
+    margin: 1em 0;
+    font-size: .7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--Grey);
+}
+
+h1, h2 {
+    font-family: "Fraunces";
+    font-size: clamp(2rem, 3vw, 2.2rem);
+}
+
+p {
+    margin: 2em 0;
+    font-size: clamp(.86rem, 3vw, 1rem);
+    color: var(--Grey);
+}
+
+.prize-tag {
+    color: var(--Green-500);
+    display: flex;
+    align-items: center;
+}
+
+.prize-tag h4 {
+    color: var(--Grey);
+    text-decoration: line-through;
+    font-size: clamp(.5rem, 2vw, .9rem);
+    margin: 0 1em;
+}
+
+.prize-tag h1 {
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.btn-link {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.btn {
+    padding: 1em 1.5em;
+    margin: 2em 0 1em;
+    text-align: center;
+    background-color: var(--Green-500);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn img {
+    margin: 0 0.8em;
+    width: 1rem;
+    height: auto;
+}
+
+@media (min-width: 425px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh
+    }
+
+
+    .main {
+        max-width: 550px;
+        width: 60%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    picture {
+        width: 100%;
+    }
+
+    picture img {
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    section {
+        width: 50%;
+    }
+
+    #text-section {
+        padding: 0 1em;
+    }
+
+    .btn:hover {
+        background-color: var(--Green-700);
+    }
+    
+}
